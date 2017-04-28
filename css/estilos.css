@@ -1,0 +1,2054 @@
+/*
+ * Estilos Bseries
+ Navbar centrada: http://jsfiddle.net/bdd9U/2/;
+ Hover para series: https://miketricking.github.io/bootstrap-image-hover/;
+ http://hasinhayder.github.io/ImageCaptionHoverAnimation/index.html
+ https://tympanus.net/Development/HoverEffectIdeas/
+ https://mdbootstrap.com/css/hover-effects/
+ internet archive
+ */
+
+ @font-face {
+	font-family: heroFuente;
+	src: url(../fonts/Hero_Light.otf);
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Titillium Web", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #f8f8f8;
+}
+
+/* fondos */
+.fondoBlanco
+{
+	background-color: #fff;
+}
+
+.fondoBlancoRoto
+{
+	background-color: #f0f0f1;
+}
+
+.fondoRojo
+{
+	background-color: #A43229;
+}
+
+.fondoTurquesa
+{
+	background-color: #5FA199;
+}
+
+.fondoGrisOscuro
+{
+	background-color: #5b5b5f;
+}
+
+
+.fondoGrisMedio
+{
+	background-color: #c1bcc3;
+}
+
+.fondoGrisClaro
+{
+	background-color: #dbdfda;
+}
+
+.fondoGrisMedioClarito
+{
+	background-color: #ccc;
+}
+
+/* Textos */
+
+.textoBlanco
+{
+	color: #fff;
+}
+
+.textoRojo
+{
+	color: #A43229;
+}
+
+.textoTurquesa
+{
+	color: #5FA199;
+}
+
+.textoGrisOscuro
+{
+	color: #5b5b5f;
+}
+
+.textoGrisMedio
+{
+	color: #c1bcc3;
+}
+
+.textoGrisClaro
+{
+	color: #dbdfda;
+}
+
+.textoBold {
+	font-weight: bold;
+}
+
+.ponerInline {
+	display: inline;
+}
+
+.ponerBlock {
+	display: block;
+}
+
+.ponerInlineBlock {
+	display: inline-block;
+}
+
+.ponerDisplayTable {
+	display: table;
+}
+
+.ponerTableCell {
+	display: table-cell;
+}
+
+.flotarDerecha {
+	float: right;
+}
+
+.flotarIzquierda {
+	float: left;
+}
+
+.alinearDerecha {
+	text-align: right;
+}
+
+.intro-header
+{
+	text-align: center;
+}
+
+/*#######################################################################################################
+#																										#
+#													LANDING												#
+#																										#
+#######################################################################################################*/
+
+/* MENSAJES DE ERROR / ÉXITO */
+
+.alertaError {
+	width: 50%;
+	padding: 1%;
+	color: #5b5b5f;
+}
+
+.mostrar {
+	display: inline-block;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 5%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	font-size: 5em;
+}
+
+.intro-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.formularioRegistro
+{
+	display: none;
+}
+
+.centrarCabecera{
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.centrarImagen{
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.centrarDivImagen{
+	text-align: center;
+}
+
+.centrarContenido{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.fuenteFraseLnding{
+	font-family: heroFuente;
+	font-size: 18px;
+}
+
+.formularioRegistro
+{
+	display: none;
+}
+
+.formularioInicioSesion{
+	display: none;
+}
+
+.rayita{
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.botonLanding{
+	font-family: heroFuente;
+	background-color: transparent;
+	padding: 2%;
+	border: 1 #fff;
+	border-style: groove;
+}
+
+/*#######################################################################################################
+#																										#
+#													NAVBAR												#
+#																										#
+#######################################################################################################*/
+
+/* Le quita el borde que tiene por defecto la de bootstrap y la hace más alta */
+.alturaNavPrincipal
+{
+	margin-top: 10px;
+	border: 0;
+	height: 80px;
+}
+
+/* Es el logo */
+.logoNavPrincipal
+{
+	background-color: white;
+	height: 81px;
+	padding: 0 10px;
+}
+
+/* Evita que se coloree el fondo del logo cuando ponemos el ratón encima */
+.logoNavPrincipal:hover
+{
+	background-color: white !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+}
+
+/* Evita que el logo coja el tamaño que quiera */
+.logoNavPrincipal > img
+{
+	height: 100% !important;
+}
+
+.navBarPrincipal li {
+  z-index: 1;
+  background-color: #A43229;
+}
+
+/* Coloca y embellece los elementos de la lista */
+.navBarPrincipal li > a {
+	font-family: heroFuente;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+	background-color: #A43229;
+	padding: 30px 20px;
+}
+
+/* Cambia el color de los elementos de la nav al poner el ratón encima con una transición suave */
+.navBarPrincipal > li:hover, .nav-user:hover
+{
+	background-color: #8b221a !important;
+	transition: background-color 0.15s;
+}
+
+	/* Nav toggle */
+	/* Aquí está el código para que la nav no se desconfigure al cambiar de tamaño la ventana */
+	/* Lo que hace este @media es ocultar el buscador y el icono de usuario que están dentro del .navbar-collapse y colocar las cosas */
+
+  @media (max-width: 992px) {
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+          top: 0;
+          border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+          margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+      .navbar-nav>li>a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      .collapse.in{
+          display:block !important;
+      }
+
+      /* Se ocultan los elementos del .pre-collapse mientras la pantalla NO tenga un ancho mayor a 768 px */
+  		.pre-collapse
+  		{
+  			display: none;
+  		}
+  		/* Le da un poco de anchura al buscador y lo coloca en su sitio */
+  		.navbar-header .nav-buscador
+  		{
+  			width: 50%;
+  			padding-left: 20px;
+  			float: left;
+  		}
+  		/* Pone en fila el buscador y la lupita */
+  		.navbarHeaderNavPrincipal .nav-buscador input
+  		{
+  			display: inline-block;
+  			width: 70%;
+  		}
+  }
+
+	/* Lo que hace este @media es ocultar el buscador y el icono del user cuando la nav no está colapsada */
+	@media (min-width: 992px)
+	{
+		/* Se ocultan los elementos del .post-collapse mientras la pantalla tenga un ancho mayor a 768 px */
+		.post-collapse
+		{
+			display: none;
+		}
+	}
+
+	/* Lo que hace este @media es bloquear la anchura de la nav cuando la anchura de la página es muy pequeña, para evitar que se descoloque */
+	@media (max-width: 730px)
+	{
+		/* Repinta la nav y le da un tamaño fijo */
+		.navbarHeaderNavPrincipal
+		{
+			width: inherit;
+	    height: 80px;
+			background-color: #A43229;
+		}
+
+	.container {
+	  width: 560px;
+	}
+
+	.navbarCollapseNavPrincipal {
+	  width: 100%;
+	}
+	}
+
+	/* Coloca y pinta el fondo de la hamburguesita */
+	.navbarToggleNavPrincipal
+	{
+		margin: 20px;
+		background-color: #8b221a;
+	}
+
+	/* Pinta de turquesa la hamburguesita al poner el ratón encima y cuando está seleccionada */
+	.navbarToggleNavPrincipal:hover, .navbarToggleNavPrincipal:focus
+	{
+		background-color: #5FA199 !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+	}
+
+	/* Le da estilo a las barritas de dentro de la hamburguesita */
+	.navbarToggleNavPrincipal > .icon-bar
+	{
+		background-color: white !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+		border-radius: 2px;
+		height: 4px;
+		width: 25px;
+	}
+
+	/* Coloca lo de dentro de la lista cuando ésta está desplegada por la hamburguesita */
+	.navbarCollapseNavPrincipal
+	{
+		padding: 0;
+		border: 0;
+	}
+
+	.navBarPrincipal
+	{
+		margin: 0;
+	}
+
+	/* fin nav toggle */
+
+	/* Buscador */
+	/* Coloca el buscador y el botón */
+	.nav-buscador
+	{
+		margin: 0;
+		float: right;
+		border: 0;
+		padding: 20px 5px;
+	}
+	/* Le da estilo al input del buscador */
+	.nav-buscador .formularioBuscar
+	{
+		padding: 5px;
+		font-weight: 400;
+		width: 160px;
+		height: 40px;
+		border-radius: 2px;
+	}
+	/* Colorea el borde del input de turquesa cuando se clicka en él */
+	.nav-buscador input:focus
+	{
+		border: 1px solid #5FA199;
+		background-color: white !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+	}
+	/* Coloca y da estilo al botón de submit del buscador */
+	.nav-boton-buscar
+	{
+		border: 0;
+		padding: 8px 10px;
+		vertical-align: top;
+		background-color: transparent;
+	}
+	/* Ajusta el tamaño de la lupa */
+	.nav-boton-buscar img
+	{
+		height: 25px;
+	}
+
+  .iframeBuscador {
+    display: none;
+    border: 1px solid #aaa;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+  }
+	/* fin buscador */
+
+	/* User */
+	/* Coloca el icono del usuario */
+	.nav-user
+	{
+		float: right;
+		padding: 20px;
+	}
+	/* Evita que se pinte una especie de "enlace" al clickar a la flecha del dropdown del usuario */
+	.nav-user a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	/* Evita que se coloree el enlace del dropdown al poner el ratón encima */
+	.nav-user a:focus
+	{
+		background-color: transparent !important; /* Se pone important para que no sea sobreescrito por otra cosa */
+	}
+	/* Limita el tamaño del icono del user */
+	.nav-user img
+	{
+		height: 40px;
+	}
+	/* Coloca el menú del user al hacer dropdown */
+	.nav-user .menuDesplegableUsuario
+	{
+		margin-left: -80px;
+		text-align: center;
+	}
+/* fin user */
+/* FIN NAV */
+
+/*###############################################################################################################
+#																												#
+#												CSS SERIES					 									#
+#																												#
+################################################################################################################*/
+
+#divAnimado
+{
+	display: none;
+}
+
+.separacionSeriesSeries
+{
+	margin-bottom: 20px;
+}
+
+.seriesBtn{
+	margin-left: 70px;
+}
+
+.divSeries{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+#divVotarNotaMedia
+{
+	display: none;
+}
+
+.nota:hover {
+	color: #A43229;
+}
+
+.notaPuntuaciones{
+	font-size: 18px;
+}
+
+
+.imgSeries{
+	margin-left: 18px;
+	width: 180px;
+	height: 240px;
+	display: inline;
+	padding: 10px 2px 2px 2px;
+}
+
+.verSeries{
+	margin-right: 110px;
+	float: right;
+	color: white !important;
+}
+.verSeries:hover{color: white;}
+
+.ordenarSeries{
+	margin: 20px 0;
+	color: #5b5b5f;
+}
+
+.ordenarSeriesBtn{
+	color: #5b5b5f;
+}
+
+/*#######################################################################################################
+#																										#
+#								ESTILOS PARA LA PÁGINA PRINCIPAL DE UNA SERIE							#
+#																										#
+#######################################################################################################*/
+
+/* ----------------------------------- TITULO DE LA SERIE ----------------------------------- */
+.tituloTituloSerie
+{
+	font-family: heroFuente;
+	/*display: block;*/
+	text-align: center;
+	font-weight: 900;
+	font-size: 40px;
+	padding: 15px 0px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.tituloNotaSerie
+{
+	font-family: heroFuente;
+	/*display:block;*/
+	color: black;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 50px;
+}
+
+.tituloAnadirSerie
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.imagenBotonAnadir
+{
+	width: auto;
+	height: 60px;
+	vertical-align: middle !important;
+}
+
+/* ----------------------------------- NAV DE LA SERIE ----------------------------------- */
+
+.navSerie
+{
+	font-family: heroFuente;
+	font-size: 16px;
+	color: white;
+	text-transform: uppercase;
+	margin: 0px 0px 10px 0px;
+	background-color: #5FA199;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.centrado
+{
+	font-family: heroFuente;
+	text-align: center;
+}
+
+.elementosNavSerie
+{
+	display: inline-block;
+	float: none;
+	margin: 0;
+	vertical-align: top;
+}
+
+.elementosNavSerie > li > a
+{
+	color: #E1E1E1 !important;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.elementosNavSerie > li > a:hover
+{
+	background-color: #dbdfda !important;
+	color:#5b5b5f !important;
+}
+
+/* Clase para pestaña seleccionada en la nav de la serie */
+.elementoNavSerieSeleccionado
+{
+	background-color: #5b5b5f;
+}
+
+/* ----------------------------------- CUERPO DE LA SERIE ----------------------------------- */
+
+.contenedorCuerpo
+{
+	overflow: hidden;
+}
+
+.cuerpoFichaSerie
+{
+	font-weight: normal;
+	font-size: 16px;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+}
+
+.cuerpoSerie
+{
+	color: #5b5b5f;
+	font-weight: normal;
+	font-size: 16px;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+
+}
+
+.cuerpoInsignias
+{
+	padding-top: 15px;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+}
+
+.imagenPrincipalSerie
+{
+	margin: 15px 0 15px 0;
+	width : 100%;
+	height: auto;
+}
+
+.imagenInsigniaSerie
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.contenidoCuerpoSerie
+{
+	padding: 25px;
+}
+
+@media (max-width: 767px) {
+  .cuerpoInsignias {
+	width: 100%;
+  }
+
+  .cuerpoInsignias .imagenInsigniaSerie {
+	width: 15%;
+  }
+}
+
+/*#######################################################################################################
+#																										#
+#													Estilos Serie INFO									#
+#																										#
+#######################################################################################################*/
+
+.contenedorInfo{
+	padding: 10px;
+}
+
+
+/*###############################################################################################################
+#                                                                                                               #
+#                                               Estilos Capitulos                                              	#
+#                                                                                                               #
+################################################################################################################*/
+
+.cuerpoDescargas
+{
+	color: #5b5b5f;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+
+}
+
+.cuerpoInternoDescargas
+{
+	padding-bottom: 30px;
+}
+
+.tituloTituloDescarga
+{
+	font-family: heroFuente;
+	display: block;
+	text-align: center;
+	font-weight: 900;
+	font-size: 25px;
+	padding-bottom: 15px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.fondoTemporada{
+	background-color:#A43229;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+.centrarTemporada{
+	text-align: center;
+
+}
+
+.tituloTemporada{
+	font-size: 17px;
+}
+
+.capitulosTemporada{
+	background-color: #dbdfda;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.colorCapitulo{
+	color:#5b5b5f;
+}
+
+.colocarDesplegable{
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.ocultarCapitulos{
+	padding: 10px 0;
+	display: none;
+}
+
+.masCapitulos{
+	background-color: #5b5b5f;
+	color: white;
+	font-size: 20px;
+}
+
+.masCapitulos:hover{
+	color:white;
+	background-color: #444449;
+}
+
+/* Añadir capítulos */
+
+.adminBtn
+{
+	color: white;
+}
+
+.adminBtn:hover
+{
+	color: #C1BCC3;
+}
+
+/*###############################################################################################################
+#																												#
+#												Estilos TEORÍAS													#
+#																												#
+################################################################################################################*/
+
+.tituloSeccionTeorias
+	{ /* Texto del título de la sección, donde pone "Teorías" */
+	font-family: heroFuente;
+	font-weight: 900;
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.cajaExteriorTeoria
+{
+	padding: 20px;
+	background-color: #5b5b5f;
+	display: inline-table;
+}
+
+.cajaInteriorTeoria
+{
+	width: 100%;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.cajaBotones {
+	border-spacing:8px;
+}
+
+.textoCajaInteriorTeoria
+{
+	float: none;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 16px;
+	color: #A43229;
+	text-align: center;
+	display: table-cell;
+}
+
+.textoCajaInteriorTeoria > a:hover, a:visited, a:link
+{
+	color: #A43229;
+	text-decoration: none;
+}
+
+.estrella
+{
+	float: none;
+	width: 50px;
+	height: auto;
+	padding-right: 5px;
+	background-color: #5b5b5f;
+	display: inline-block;
+}
+
+.megustaBtn
+{
+	float: none;
+	width: 50px;
+	height: auto;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+.tamanoMeGustaBtn {
+	width: 40px;
+	height: auto;
+}
+
+.tituloTop5
+{
+	font-weight: bold;
+	font-size: 22px;
+	color: #5b5b5f;
+}
+
+.cajaTextAreaNuevaTeoria
+{
+	width: 100%;
+}
+
+.textAreaNuevaTeoria
+{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+
+.enviarBtn
+{ /* botón Enviar Teoría */
+	color: white;
+	float: right;
+}
+
+.enviarBtn:hover
+{
+	color: #C1BCC3;
+}
+
+.cajaOrdenarBtns
+{
+	margin: 1%;
+	height: 15%;
+}
+
+.botones
+{
+	display: inline-block;
+	width: 110px
+}
+
+.margenBotonVerMas {
+	margin: 10px;
+}
+
+/*###############################################################################################################
+#																												#
+#											ESTILOS subpágina TEORÍA											#
+#																												#
+################################################################################################################*/
+
+/* Caja de la teoría */
+
+.cajaExteriorTeoriaIndividual
+{
+	width: 100%;
+	padding: 30px;
+	background-color: #5b5b5f;
+	display: inline-table;
+}
+
+.cajaInteriorTeoriaIndividual
+{
+	width: 100%;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.textoCuerpoTeoria
+{
+	font-size: 14px;
+	color: #5b5b5f;
+}
+
+.autorTeoria {
+	font-size: 16px;
+	font-weight: bold;
+	color: #A43229;
+}
+
+/*Parte de los comentarios */
+
+.cajaTituloTeoria {
+	border: 1px solid #DDD;
+	padding: 5px 15px;
+	border-radius: 3px;
+}
+
+/*###############################################################################################################
+#																												#
+#												ESTILOS PARA HUMOR			 									#
+#																												#
+################################################################################################################*/
+
+.humor
+{
+	padding: 0 30px;
+	width: 100%;
+}
+
+.humor .tituloTituloHumor
+{
+	padding: 0;
+}
+
+.comentariosHumor
+{
+	padding: 20px 30px;
+}
+
+.comentarioTexto
+{
+	border: 1px solid #DDD;
+	padding: 10px 30px;
+	border-radius: 3px;
+	background-color: white;
+}
+
+.comentarioTexto img
+{
+	height: 30px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.comentarioTexto .imagen img
+{
+	height: 200px;
+}
+
+.comentarioTexto .nombre
+{
+	font-weight: bold;
+}
+
+.comentarioBackground
+{
+	padding: 10px 20px;
+}
+
+.textareaHumor
+{
+	width: 100%;
+}
+
+.textareaHumor textarea
+{
+	width: 100%;
+}
+
+.comentarioBackground .reacciones
+{
+	margin-top: 10px;
+	height: 25px;
+}
+
+.reacciones img
+{
+	float: right;
+	margin: 0 3px;
+	height: 100%;
+}
+
+.puntuacion
+{
+	margin: 0 3px;
+	height: 100%;
+	float: right;
+	padding: 0 10px;
+	border-radius: 3px;
+	color: black;
+}
+
+/*###############################################################################################################
+#																												#
+#													ESTILOS DEL MURO											#
+#																												#
+################################################################################################################*/
+
+/*------ GENERAL -------*/
+
+.tituloPublicar {
+	font-family: heroFuente;
+	display: block;
+	text-align: left !important;
+	font-weight: 900;
+	font-size: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.tituloAside {
+	font-family: heroFuente;
+	text-align: left !important;
+	font-size: 18px;
+	padding: 15px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.cuerpoMuro {
+	color: #fff;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.imagenMuro
+{
+	margin: 0 auto;
+	text-align: center;
+	width: 70%;
+}
+
+.imagenMuro img
+{
+	max-width: 100%;
+}
+
+.publicarBtn:link, .publicarBtn:hover {
+	color: #5b5b5f !important;
+}
+/*------ ASIDE IZQUIERDA -------*/
+  .izquierda {
+	padding: 25px;
+	color: white;
+  }
+
+  .izquierda .btn {
+	color: white;
+  }
+
+  .izquierda .imagenPerfil {
+	text-align: center;
+	width: 100%;
+  }
+
+  .izquierda .info {
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 16px;
+	display: inline-block;
+	font-weight: normal;
+  }
+
+    .izquierda .info {
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 16px;
+	display: inline-block;
+	font-weight: normal;
+  }
+
+  .izquierda .info p {
+	margin-bottom: 0;
+  }
+
+  .izquierda .seriesHead {
+	padding: 20px 20px 0 20px;
+  }
+
+  /*------- Imagen perfil -------*/
+	.imagenPerfil img{
+	  height: 130px;
+	  border-radius: 10px;
+	}
+	/*------- fin Imagen perfil -------*/
+
+	/*------- Series -------*/
+
+	#restoSeriesMuro
+	{
+		display: none;
+	}
+
+	.seriesUsuario {
+	  padding: 5px;
+	}
+
+	.seriesUsuario .col-sm-3, .seriesUsuario .col-md-4, .seriesUsuario .col-lg-4 {
+	  padding: 5px;
+	  border-radius: 0;
+	}
+
+	.seriesUsuario .thumbnail {
+	  padding: 0;
+	  border-radius: 0;
+	  border: 0;
+	}
+
+	.seriesUsuario .thumbnail img {
+	  height: 100px;
+	}
+
+	.seriesUsuario .caption {
+	  padding: 0;
+	}
+
+	.seriesUsuario .caption .row {
+	  margin: 0;
+	  text-align: center;
+	}
+
+	.seriesUsuario .caption .basura {
+	  border: 0;
+	  padding: 2px;
+	  padding-top: 3px;
+	  width: 100%;
+	  background-color: #A43229;
+	  color: white;
+	}
+
+	.serieUsuarioMargenes
+	{
+		padding: 0 5px 10px 5px;
+	}
+
+	.seriesUsuario .caption .basura:hover {
+	  background-color: #B5433A;
+	}
+
+	.seriesUsuario .caption p {
+	  font-size: 12px;
+	  margin: 0;
+	  padding: 5px;
+	}
+  /*------- fin series -------*/
+
+  /*------- Insignias -------*/
+
+  .insignias {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+	.insignias img {
+	  width: 100%;
+	}
+  /*------- fin insignias -------*/
+/*------- FIN ASIDE IZQUIERDA -------*/
+
+/*------- CONTENIDO PINCIPAL -------*/
+  .derecha {
+	padding:0;
+  }
+
+  /*-------- Publicar ---------*/
+	.publicar {
+	  padding: 20px 15px;
+	}
+
+	.publicarTitulo {
+	  padding: 20px 10px;
+	}
+
+	.publicarTextarea {
+		text-align: center;
+		padding: 0 25px;
+	}
+
+	.publicarTextarea textarea {
+	  width: 100%;
+	}
+
+	.publicarOpciones
+	{
+		padding: 10px 0;
+	}
+
+	.publicarQuitarMargin {
+		margin: 0;
+	}
+
+	.botonInputFileModificado {
+		float: left;
+		text-align: center;
+		margin-left: 15px;
+	}
+
+	.botonInputFileModificado:hover {
+		background-color: #333;
+		color: #fff;
+	}
+
+	.botonInputFileModificado .inputImagenOculto {
+		opacity: 0;
+		position: absolute;
+		margin-left: 0px;ñ
+		width: 110px;
+		height: 35px;
+	}
+
+	.botonInputFileModificado {
+	  border-radius: 4px;
+	  color: white;
+	  background-color: #A43229;
+	}
+
+	.botonInputFileModificado:hover {
+	  background-color: #C6544B;
+    color: white;
+	}
+  /*-------fin de publicar --------*/
+
+  /*--------- Noticias ----------*/
+
+	.noticiasPanel {
+		padding: 0 3% 2% 3%;
+	}
+
+	.columnasIgualadasPadre {
+		overflow: hidden;
+	}
+
+	.columnasIgualadasHijos {
+		padding-bottom: 99999px;
+		margin-bottom: -99999px;
+	}
+
+	.noticia {
+		padding: 1%;
+	}
+
+	.noticiaContenedor {
+		padding: 2%;
+		margin-left: 20px;
+	}
+
+	.avatarContenedor {
+		width: 10%;
+		height: auto;
+		border-radius: 5px;
+	}
+
+	.tableMargin {
+		border-spacing: 15px;
+	}
+
+	.avatarNoticia {
+		width: 100%;
+		min-width: 60px;
+	}
+
+	/* Reacciones */
+
+	.reaccionesNoticia
+	{
+		width: 100%;
+		height: 50px;
+		padding: 1%;
+	}
+
+
+	.reaccionesNoticia img
+	{
+		float: right;
+		height: 30px;
+	}
+
+	.puntuacionNoticia
+	{
+		height: 30px;
+		margin: 0 3px;
+		float: right;
+		padding: 0 10px;
+		border-radius: 3px;
+		color: black;
+	}
+
+  /*-------- fin de noticias --------*/
+/*-------- FIN DE CONTENIDO PRINCIPAL --------*/
+
+/*###############################################################################################################
+#                                                                                                               #
+#                                               Estilos Mensajes                                               	#
+#                                                                                                               #
+################################################################################################################*/
+
+.tituloTituloMensajeria
+{
+	font-family: heroFuente;
+	display: block;
+	text-align: center;
+	font-weight: 900;
+	font-size: 25px;
+	padding: 15px 0px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.amigosConectados
+{
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+}
+
+.cuerpoMensajes
+{
+	padding: 0;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+}
+
+.listaMensajes
+{
+	padding: 25px;
+}
+
+.textoMensaje
+{
+  	margin: 10px;
+  	height: 30px;
+	padding-left: 50px;
+	color: #5b5b5f;
+}
+
+.textoMensaje img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.mensajeLeido {
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #CCC;
+}
+
+.mensajeNoLeido {
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: white;
+}
+
+.mensajeEnviado {
+  background-color: #ccc;
+  margin: 10px;
+  width: 100%;
+}
+
+.ajustarBotones{
+	padding-left: 50px;
+  	margin: 10px 0;
+}
+
+.listaAmigos
+{
+	padding-left: 0;
+}
+
+.listaAmigos > li
+{
+	list-style-type: none;
+}
+
+.tituloAsaid{
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.amigosAsaid > li> a:link, a:visited
+{
+	text-align: center;
+	font-size: 15px;
+	color: #dbdfda;
+}
+
+.amigosAsaid > li > a:hover
+{
+	color: white;
+}
+
+a:link
+{
+ text-decoration:none;
+}
+
+.mensajesDestacados
+{
+	color: #A43229;
+	font-size: 20px;
+}
+
+.aceptarAmistad{
+	color:white;
+	background-color: #de9d00;
+}
+
+.eliminarRechazar{
+	color:white;
+	background-color: #C1BCC3;
+}
+
+.verMensaje{
+	color:white;
+	background-color: #5FA199;
+}
+
+.fotoMensajeria{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.botonesEnviados{
+	padding-left: 90px;
+}
+
+.verMensaje:hover{
+	color:white;
+	background-color: #088A85;
+}
+
+.eliminarRechazar:hover{
+	color:white;
+	background-color: #828183;
+}
+
+.aceptarAmistad:hover{
+	color:white;
+	background-color: #C49217;
+}
+
+.responderMensaje
+{
+	font-weight: 400;
+	color: black;
+	padding: 30px;
+	display: none;
+}
+
+.enviarMensaje
+{
+	font-weight: 400;
+	color: black;
+	padding: 30px;
+  padding-top: 0;
+}
+
+/*###############################################################################################################
+#                                                                                                               #
+#                                               Estilos Ver Mensajes                                            #
+#                                                                                                               #
+################################################################################################################*/
+
+.marginMensajes {
+	margin: 2%;
+}
+
+.paddingMensajes {
+	padding: 2%;
+}
+
+
+/*###############################################################################################################
+#                                                                                                               #
+#                                               Estilos Perfil                                                  #
+#                                                                                                               #
+################################################################################################################*/
+
+.imagenSeriePerfilConHover
+{
+	width:100%;
+	height:100%;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	cursor:default;
+}
+
+.divSubOverlaySeriePerfil
+{
+	height: 100%;
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.botonBorrarSeriePerfil
+{
+	position:absolute;
+	bottom: 10px;
+}
+
+.imagenSeriePerfilConHover .overlay
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
+	opacity:0;
+	background-color:rgba(0,0,0,0.8);
+	-webkit-transition:all .4s ease-in-out;
+	transition:all .4s ease-in-out
+}
+
+.imagenSeriePerfilConHover img
+{
+	width: 100%;
+	height: auto;
+	position:relative;
+	-webkit-transition:all .4s linear;
+	transition:all .4s linear;
+	}
+
+.imagenSeriePerfilConHover h2
+{
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	position:relative;
+	vertical-align: middle;
+	font-size:20px;
+	background:rgba(0,0,0,0.6);
+	-webkit-transform:translatey(-100px);
+	-ms-transform:translatey(-100px);
+	transform:translatey(-100px);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	/*padding:10px;*/
+	margin: 0;
+}
+
+.imagenSeriePerfilConHover h3
+{
+	color:#fff;
+	text-align:center;
+	position:relative;
+	font-size:14px;
+	margin: 0;
+	-webkit-transform:translatey(-100px);
+	-ms-transform:translatey(-100px);
+	transform:translatey(-100px);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.imagenSeriePerfilConHover a.info
+{
+	text-decoration:none;
+	display:inline-block;
+	vertical-align: bottom;
+	text-transform:uppercase;
+	color:#fff;
+	background-color:transparent;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.imagenSeriePerfilConHover a.info:hover
+{
+	box-shadow:0 0 5px #fff;
+}
+
+.imagenSeriePerfilConHover:hover img {
+	-ms-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+.imagenSeriePerfilConHover:hover .overlay
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.imagenSeriePerfilConHover:hover h2,.imagenSeriePerfilConHover:hover a.info, .imagenSeriePerfilConHover:hover h3
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+	-ms-transform:translatey(0);
+	-webkit-transform:translatey(0);
+	transform:translatey(0);
+}
+
+.imagenSeriePerfilConHover:hover a.info
+{
+	-webkit-transition-delay:.2s;
+	transition-delay:.2s;
+}
+
+.seccionTituloUsuario
+{
+ 	position: relative;
+  transform: translate(-50%);
+  left: 50%;
+  display: table-cell;
+	padding: 15px;
+	font-family: heroFuente;
+	font-weight: 900px;
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.seccionAnadirAmigo
+{
+  	padding: 10px;
+	height: 70px;
+}
+
+.seccionAnadirAmigo img {
+  height: 50px;
+}
+
+.cuerpoPerfil
+{
+	overflow: hidden;
+}
+
+.seccionPerfilInfo
+{
+	padding: 20px;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+}
+
+.seccionPerfilCuerpo
+{
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+	text-align: center;
+}
+
+.seccionPerfilCuerpoInterno
+{
+	padding-bottom: 30px;
+}
+
+.imagenPrincipalPerfil
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	border-radius: 30px;
+}
+
+.perfilTituloSerie, .tituloInsignia
+{
+	padding-top: 20px;
+	font-family: heroFuente;
+	font-weight: 900;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.botonVerMasSeriesPerfil
+{
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.restoDeSeriesPerfil
+{
+	display: none;
+}
+
+.restoDeInsigniasPerfil
+{
+	display: none;
+}
+
+.separacionSeriesPerfil
+{
+	padding: 15px 0;
+}
+
+.separacionInsigniasPerfil
+{
+	padding: 10px 0;
+}
+
+/*Boton Añadir Amigos*/
+
+.anadirAmigoImagen
+{
+	width: auto;
+	height: 100%;
+}
+/*Fin boton*/
+
+.perfilSerie
+{
+	text-align: center;
+}
+
+.perfilImagenInsignia
+{
+	width: 100%;
+	height: auto;
+}
+
+a:visited
+{
+	text-decoration:none;
+	color:black;
+}
+
+.seccionPerfilCuerpoInterno .col-xs-3, .seccionPerfilCuerpoInterno .col-xs-2
+{
+	margin-bottom: 20px;
+}
+
+/*###############################################################################################################
+#																												#
+#											ESTILOS EDITAR PERFIL 												#
+#																												#
+################################################################################################################*/
+
+.editar_perfil{
+	font-size: 14px;
+	margin-left: 50%;
+}
+
+.datosPerfil{
+	font-family: heroFuente;
+	text-align: center;
+}
+
+.guardarDatosPerfil
+{
+	margin-top: 20px;
+	width: 80px;
+	height: auto;
+	margin-left: 140px;
+}
+
+.filaPerfil
+{
+	margin-left: 200px;
+	text-align: center;
+}
+
+.imagenPrincipalEditarPerfil
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	border-radius: 10px;
+}
+
+.enviarModificacionBtn {
+	color: #fff;
+	background-color: #A43229;
+}
+
+.enviarModificacionBtn:hover {
+	color: #fff;
+	background-color: #8c2119;
+}
+
+.marginFormEditar {
+	padding: 2%;
+}
+
+/*###############################################################################################################
+#																												#
+#													ESTILOS FOOTER 												#
+#																												#
+################################################################################################################*/
+
+.textoFooter
+{ /* del footer, esto determina en general el tipo de letra, padding y alineación*/
+	font-size: 15px;
+	font-weight: normal;
+	padding: 20px;
+	text-align: center;
+	color: #5b5b5f;
+}
+
+.textoFooter a:link
+{ /* cambia el color de los links del footer */
+	color: #5b5b5f;
+	text-decoration: none;
+}
+
+.textoFooter a:hover
+{ /* cambia el color de los links del footer cuando pasas por encima de ellos */
+	color: #C1BCC3;
+	text-decoration: none;
+}
+
+.textoFooter a:visited
+{ /* cambia el color de los links del footer cuando ya han sido visitados */
+	color: #C1BCC3;
+	text-decoration: none;
+}
+
+.separadores
+{ /* Da color y tamaño a los | que separan los enlaces */
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #5b5b5f;
+}
+
+.textoSubtituloFooter
+{ /* tamaño y color del texto del subtítulo 'BeSeries is coming' */
+	font-size: 12px;
+	color: #C1BCC3;
+}
+
+.condiciones_uso
+{
+	color: #5b5b5f;
+	padding: 20px 40px 20px 40px;
+	}
+
+.condiciones{
+	font-family: heroFuente;
+	color: #5b5b5f;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 10px;
+}
+
+
+
+/*###############################################################################################################
+#																												#
+#													COSAS GENERALES			 									#
+#																												#
+################################################################################################################*/
+
+
+.filaContenido
+{
+	display: table;
+}
+
+.divFilaContenido
+{
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.centrarCosas1 {
+	text-align: center;
+}
+
+.centrarCosas2 {
+	margin: 0 auto;
+}
+
+.colorTextarea {
+	color: #5b5b5f;
+	padding: 10px;
+}
+
+.margin0 {
+	margin: 0;
+}
+
+.padding0
+{
+	padding: 0;
+}
+
+.punteroClick
+{
+	cursor: pointer;
+}
+
+.alineamientoIzquierda
+{
+	text-align: left;
+}
+
+.alineamientoDerecha
+{
+	text-align: right;
+}
+
+/*###############################################################################################################
+#																												#
+#											ESTILOS COMENTAR CAPITULOS 											#
+#																												#
+################################################################################################################*/
+
+.centrarComentarCapitulo{
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.centrarSeccionCapitulo{
+	text-align: center;
+	font-weight: bold;
+}
+
+.comentarioCapituloBtn{
+	color: #5b5b5f;
+}
+
+.paginacion {
+  text-align: center;
+}
+
+.pagina {
+  padding: 5px 10px;
+  background-color: #dbdfda;
+}
+
+.paginaActual {
+  background-color: #c1bcc3;
+}
+
+/*###############################################################################################################
+#																												#
+#													ESTILOS BUSCADOR 											#
+#																												#
+################################################################################################################*/
+
+.cuerpoImagenResultadoBusquedaUsuario
+{
+	padding: 5px;
+}
+
+.imagenResultadoBusquedaUsuario
+{
+	width: 100%;
+	height: auto;
+}
+
+.cuerpoResultadoBuscador
+{
+	padding: 20px 0;
+}
+
+.nombreUsuarioResultadoBuscador
+{
+	text-align: left;
+	font-size: 16px;
+}
+
+.amigosComunResultadoBuscador
+{
+	text-align: left;
+	font-size: 13px;
+}
+
+.noHayResultados
+{
+	color: black;
+}

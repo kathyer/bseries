@@ -1,0 +1,16 @@
+Este es un trabajo en grupo hecho en el curso de PHP impartido por fundación telefónica. Los miembros del grupo son:
+
+	Jose Luis Martín
+	Eneko Díaz
+	Ángela Sopo
+	Ana Castelló
+	Jonatan Bautista
+	Manuel Gutierrez
+
+Pasos para hacer funcionar la aplicación web:
+
+	1. Se necesita crear una BD llamada beseries con cotejamiento UTF-8 Spanish-CI
+
+	2. Utilizar el importador para cargar el fichero .sql y que esté listo para usarse.
+
+Se puede logear como kathyer/24 para ver la vista de usuario normal o como eneko/1 para ver la vista de administrador

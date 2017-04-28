@@ -1,0 +1,29 @@
+@font-face {
+ font-family: heroFuente;
+ src: url(../fonts/Hero_Light.otf);
+}
+
+.mensaje-alarma {
+  background-color: #dbdfda;
+  border-color: #dbdfda;
+  display: block;
+  position: fixed;
+  font-weight: bold;
+  font-family: heroFuente;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mensaje-alarma > hr {
+  border-top-color: #A43229;
+}
+
+.texto-alarma
+{
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 17px;
+  display: block;
+  color: #FFF;
+}
